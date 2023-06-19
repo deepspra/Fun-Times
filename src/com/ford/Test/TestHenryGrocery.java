@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestHenryGrocery {
 
     @Test
-    void test1(){
+    void testwithinputs1(){
         InputStream inStream = System.in;
         System.setIn(new ByteArrayInputStream("2\nsoup\n3\nbread\n2\n2023-06-19\n".getBytes()));
 
@@ -31,7 +31,7 @@ public class TestHenryGrocery {
     }
 
     @Test
-    void test2(){
+    void testwithinputs2(){
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream("2\napple\n6\nmilk\n1\n2023-06-19\n".getBytes()));
 
@@ -52,7 +52,7 @@ public class TestHenryGrocery {
     }
 
     @Test
-    void testcase3(){
+    void testwithinputs3(){
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream("2\napple\n6\nmilk\n1\n2023-06-24\n".getBytes()));
 
@@ -73,7 +73,7 @@ public class TestHenryGrocery {
     }
 
     @Test
-    void test4(){
+    void testwithinputs4(){
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream("3\napple\n3\nsoup\n2\nbread\n1\n2023-06-24\n".getBytes()));
 
