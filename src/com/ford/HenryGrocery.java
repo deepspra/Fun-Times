@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class HendryProblem {
+public class HenryGroceryShop {
 
     static Map<String, Double> itemsCost = new HashMap<>();
     static Map<String, Integer> stocks = new HashMap<>();
@@ -14,6 +14,7 @@ public class HendryProblem {
     static double offerprice;
 
     public static void main(String[] args) {
+        stocks = new HashMap<>();
         getItemsCost();
         Scanner scn= new Scanner(System.in);
         System.out.println("Enter the number of products :");
@@ -25,7 +26,6 @@ public class HendryProblem {
             prodName = scn.next();
             System.out.println("Enter Quantity:");
             quantity = scn.nextInt();
-            /*System.out.println("Enter Quantity :");*/
             stocks.put(prodName,quantity);
         }
         System.out.println("Enter the Purchase Date[yyyy-MM-DD]:");
@@ -81,7 +81,6 @@ public class HendryProblem {
 
 
     private static Map getItemsCost() {
-
         itemsCost = new HashMap<>();
         itemsCost.put("soup", 0.65);
         itemsCost.put("bread", 0.80);
